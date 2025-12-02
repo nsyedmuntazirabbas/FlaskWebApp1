@@ -26,7 +26,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ env.DOCKER_IMAGE_NAME }} .
+          docker build -t ${{ env.DOCKER_IMAGE_NAME }} ./flask_devops_app
+.
 
       - name: Tag Docker image
         run: |
