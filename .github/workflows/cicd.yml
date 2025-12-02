@@ -27,15 +27,15 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t ${{ env.DOCKER_IMAGE_NAME }} ./flask_devops_app
-.
 
       - name: Tag Docker image
         run: |
-          docker tag ${{ env.DOCKER_IMAGE_NAME }} ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}
+         docker tag ${{ env.DOCKER_IMAGE_NAME }} ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}:latest
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}
+          docker tag ${{ env.DOCKER_IMAGE_NAME }} ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}:latest
+
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
