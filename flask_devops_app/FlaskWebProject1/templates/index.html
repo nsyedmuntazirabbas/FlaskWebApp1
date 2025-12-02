@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div style="display: grid; gap: 2rem;">
+    <div>
+        <p style="text-transform: uppercase; letter-spacing: 0.4em; color: rgba(248,250,252,0.6); font-size: 0.9rem;">PORTFOLIO SNAPSHOT</p>
+        <h1 style="font-size: clamp(2rem, 4vw, 3.5rem); margin: 0 0 1rem;">
+            Hi, I'm <span style="color: var(--accent);">Bilal RAHAOUI</span> — crafting thoughtful web experiences.
+        </h1>
+        <p style="max-width: 620px; line-height: 1.7; color: rgba(248,250,252,0.85);">
+            I build clean, dependable solutions with Python and Flask, blending pragmatic engineering with a designer's eye.
+            This live demo runs on Docker, backed by PostgreSQL + Redis, and is ready to deploy to the cloud.
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: rgba(248,250,252,0.6); font-style: italic;">
+            This change was done on December 2nd 2025
+        </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+        <article style="background: rgba(56, 189, 248, 0.08); border-radius: 1rem; padding: 1.25rem;">
+            <h3 style="margin: 0 0 0.75rem; color: var(--accent);">What I do</h3>
+            <p style="margin: 0; color: rgba(248,250,252,0.85);">
+                Build APIs and dashboards with Flask, optimize data flows, and containerize workloads for smooth shipping.
+            </p>
+        </article>
+        <article style="background: rgba(94, 234, 212, 0.08); border-radius: 1rem; padding: 1.25rem;">
+            <h3 style="margin: 0 0 0.75rem; color: #5eead4;">Toolbox</h3>
+            <p style="margin: 0; color: rgba(248,250,252,0.85);">
+                Python · Flask · PostgreSQL · Redis · Docker · GitHub Actions · Azure · Clean UI systems.
+            </p>
+        </article>
+        <article style="background: rgba(248, 250, 252, 0.08); border-radius: 1rem; padding: 1.25rem;">
+            <h3 style="margin: 0 0 0.75rem; color: #fbbf24;">Current Focus</h3>
+            <p style="margin: 0; color: rgba(248,250,252,0.85);">
+                Shipping reliable, observable backends and giving each interface a calm, purposeful feel.
+            </p>
+        </article>
+    </div>
+</div>
+{% endblock %}

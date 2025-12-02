@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div style="display: grid; gap: 1.5rem;">
+    <header>
+        <p style="letter-spacing: 0.35em; text-transform: uppercase; color: rgba(248,250,252,0.6); font-size: 0.85rem;">Let's Talk</p>
+        <h1 style="margin: 0 0 0.5rem;">{{ title }} · {{ message }}</h1>
+        <p style="max-width: 540px; color: rgba(248,250,252,0.8); line-height: 1.7;">
+            Whether it's a new platform, a redesign, or just a conversation about ideas,
+            I'm always happy to connect. Send a note and let's build something thoughtful together.
+        </p>
+    </header>
+
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+        <div style="background: rgba(56,189,248,0.08); padding: 1.25rem; border-radius: 1rem;">
+            <h3 style="margin-top: 0; color: var(--accent);">Direct line</h3>
+            <p style="margin: 0; color: rgba(248,250,252,0.85);">
+                <strong>Email:</strong> <a href="mailto:hello@bilalrahaoui.dev" style="color: var(--accent); text-decoration: none;">hello@bilalrahaoui.dev</a><br />
+                <strong>Location:</strong> Remote · Morocco / EU friendly hours
+            </p>
+        </div>
+        <div style="background: rgba(148,163,184,0.12); padding: 1.25rem; border-radius: 1rem;">
+            <h3 style="margin-top: 0; color: #5eead4;">Collaborations</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; color: rgba(248,250,252,0.85);">
+                <li>• Product engineering</li>
+                <li>• DevOps & cloud setup</li>
+                <li>• UI refresh for dashboards</li>
+            </ul>
+        </div>
+    </section>
+</div>
+{% endblock %}

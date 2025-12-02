@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div style="display: grid; gap: 1.5rem;">
+    <header>
+        <p style="letter-spacing: 0.35em; text-transform: uppercase; color: rgba(248,250,252,0.6); font-size: 0.85rem;">About</p>
+        <h1 style="margin: 0 0 0.5rem;">{{ title }} · {{ message }}</h1>
+        <p style="max-width: 640px; color: rgba(248,250,252,0.8); line-height: 1.7;">
+            I'm abbas, a developer 
+        </p>
+    </header>
+
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+        <div style="background: rgba(148,163,184,0.12); padding: 1.25rem; border-radius: 1rem;">
+            <h3 style="margin-top: 0; color: var(--accent);">Principles</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; color: rgba(248,250,252,0.85);">
+                <li>• Ship with empathy</li>
+                <li>• Favor clarity over complexity</li>
+                <li>• Instrument everything</li>
+            </ul>
+        </div>
+        <div style="background: rgba(56,189,248,0.08); padding: 1.25rem; border-radius: 1rem;">
+            <h3 style="margin-top: 0; color: #5eead4;">What excites me</h3>
+            <p style="margin: 0; color: rgba(248,250,252,0.85);">
+                Building platforms that feel calm to operate—beautiful dashboards, resilient APIs, and smooth developer experiences.
+            </p>
+        </div>
+    </section>
+</div>
+{% endblock %}

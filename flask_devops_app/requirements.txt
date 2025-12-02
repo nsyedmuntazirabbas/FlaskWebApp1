@@ -1,0 +1,6 @@
+Flask>=2.2.3
+pytest
+pytest-flask
+psycopg2-binary
+redis
+python-dotenv
