@@ -94,10 +94,10 @@
 <body>
     <canvas id="fireworks-canvas"></canvas>
     <header>
-        <div class="brand">Bilal RAHAOUI</div>
+        <div class="brand">Abbas</div>
         <nav>
             <a href="{{ url_for('home') }}" class="{% if request.path == '/' or request.path == '/home' %}active{% endif %}">Home</a>
-            <a href="{{ url_for('about') }}" class="{% if request.path == '/about' %}active{% endif %}">About</a>
+            <a href="{{ url_for('about') }}" class="{% if request.path == '/about' %}active{% endif %}">Detail</a>
             <a href="{{ url_for('contact') }}" class="{% if request.path == '/contact' %}active{% endif %}">Contact</a>
         </nav>
     </header>
@@ -107,7 +107,7 @@
         </section>
     </main>
     <footer>
-        Crafted with focus · {{ year }} · Bilal RAHAOUI
+        Crafted with focus · {{ year }} · Abbas
     </footer>
     <script>
         // Fireworks Animation (limited to ~3 seconds)
