@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: "DevOps5"           
-  DOCKER_IMAGE_NAME: "flaskwebapp"      
+  AZURE_WEBAPP_NAME: "DevOps5"
+  DOCKER_IMAGE_NAME: "flaskwebapp"
 
 jobs:
   build-and-deploy:
@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ env.DOCKER_IMAGE_NAME }} .
+          docker build -t ${{ env.DOCKER_IMAGE_NAME }} ./FlaskWebProject1
 
       - name: Tag Docker image
         run: |
