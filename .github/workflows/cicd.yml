@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: "DevOps5"         # Azure App Service name
+  AZURE_WEBAPP_NAME: "DevOps5"         # Azure App Service name.
   DOCKER_IMAGE_NAME: "flaskwebapp"    # Docker image name
 
 jobs:
